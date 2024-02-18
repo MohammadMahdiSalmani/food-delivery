@@ -1,7 +1,7 @@
 import React from 'react'
-import Login from './pages/Login/Login'
+import Login from './pages/Login'
 
-import "./styles/style.scss"
+import "./styles/index.css"
 
 const App = () => {
   return (
