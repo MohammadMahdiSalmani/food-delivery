@@ -1,0 +1,17 @@
+@use 'sass:color';
+
+button {
+    @include colorize($black);
+    border: none;
+    outline: none;
+    min-height: 3.5em;
+    font-weight: bold;
+    font-size: $font-medium;
+    color: $white;
+    cursor: pointer;
+    transition: all ease .3s
+}
+
+.button-red {
+    @include colorize($primary);
+}

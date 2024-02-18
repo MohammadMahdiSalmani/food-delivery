@@ -1,0 +1,43 @@
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 75vh;
+    justify-content: space-around !important;
+
+    fieldset {
+        justify-content: flex-start !important;
+        margin: 1em 0;
+
+        a {
+            justify-content: flex-start !important;
+            margin: 2em 0;
+            font-size: 14px;
+            color: #F52124;
+            transition: all ease .3s;
+            font-weight: bold;
+
+            &:hover {
+                color: darken($color: #F52124, $amount: 7);
+            }
+        }
+    }
+}
+
+#user-form {
+    background-color: #fff;
+    height: 8vh;
+    border-radius: 0 0 30px 30px;
+    align-items: flex-end;
+
+    span {
+        font-size: 20px;
+        height: 4em;
+        cursor: pointer;
+
+        &[class="row column-xs-4 active"] {
+            border-bottom: 5px solid #F52124;
+        }
+    }
+}
