@@ -1,5 +1,5 @@
 export const food = {
-    "pizza": [
+    Pizza: [
         {
             name: "Mixed",
             img: "./img/pizza1.png",
