@@ -14,6 +14,31 @@ body {
     overflow-x: hidden;
 }
 
+form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.input-underline {
+    border-bottom: 2px solid #EAEAEA !important;
+    border-radius: 0 !important;
+}
+
+.input-underline:focus {
+    border-bottom: 2px solid #656565 !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 @font-face {
     font-family: capsule;
     src: url(../../public/fonts/Capsule-Black.ttf);

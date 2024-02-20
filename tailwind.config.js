@@ -15,7 +15,8 @@ module.exports = {
       info: "#1471ff",
       success: "#24ce6b",
       danger: "#f7034c",
-    }
+    },
+    extend: {}
   },
   plugins: [],
 }
