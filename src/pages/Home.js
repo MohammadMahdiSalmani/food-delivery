@@ -11,14 +11,13 @@ const Home = () => {
 
       <div className='flex flex-col items-center w-full px-10'>
         <label className='flex w-full justify-center py-10 text-5xl'>Delicious food for you</label>
-        <Input className='flex w-5/6 pl-5 text-2xl rounded-full bg-lightGray border-none' size='large' prefix={<SearchOutlined />} placeholder='Search' />
+        <Input className='flex w-full pl-5 text-2xl rounded-full bg-lightGray border-none' size='large' prefix={<SearchOutlined />} placeholder='Search' />
       </div>
 
       <Category category="Pizza" />
+      <Category category="Burger" />
+      <Category category="Salad" />
 
-      <div className='h-80'>
-
-      </div>
     </section>
   )
 }

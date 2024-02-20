@@ -5,6 +5,7 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 
 import "./styles/index.css"
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
         </Routes>
+        <Navbar />
       </Layout>
     </Router>
   )

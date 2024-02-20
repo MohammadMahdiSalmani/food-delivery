@@ -10,12 +10,11 @@ const Category = ({ category }) => {
                 {food[category].map(item => {
                     return <li key={item.name} className='basis-2/3 w-32 shrink-0 mx-2 overflow-hidden'>
                         <Card
-                            hoverable
                             cover={<img alt={item.name} src={item.img} className='relative -top-10 px-5' />}
-                            className='flex flex-col items-center mt-14 rounded-3xl'
+                            className='flex flex-col min-h-72 items-center mt-14 rounded-3xl'
                         >
-                            <label className='flex justify-center text-2xl w-full'>{item.name}</label>
-                            <label className='flex justify-center text-2xl w-full'>{item.price}</label>
+                            <label className='flex justify-center text-xl w-full'>{item.name}</label>
+                            <label className='flex justify-center text-3xl p-5 w-full text-primary'>{item.price}</label>
                         </Card>
                     </li>
                 })}
