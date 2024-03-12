@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: capsule;
+    src: url(../../public/fonts/Capsule-Black.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +44,6 @@ form {
     scrollbar-width: none;
 }
 
-@font-face {
-    font-family: capsule;
-    src: url(../../public/fonts/Capsule-Black.ttf);
+.ant-drawer-content-wrapper {
+    height: auto !important;
 }

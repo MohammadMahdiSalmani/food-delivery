@@ -6,6 +6,7 @@ An online food ordering and delivery platform.
 * React JS
 * Tailwind CSS
 * Ant Design
+* Redux Toolkit
 
 ## Creator 🧑🏻‍💻
 

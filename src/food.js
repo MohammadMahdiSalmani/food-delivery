@@ -23,7 +23,7 @@ export const food = {
 
     Burger: [
         {
-            name: "Texas Double Whopper",
+            name: "Texas Whopper",
             img: "./img/burger1.png",
             price: "21.89$"
         },
@@ -33,7 +33,7 @@ export const food = {
             price: "18.49$"
         },
         {
-            name: "Spicy Royal Crispy Chicken",
+            name: "Spicy Crispy Chicken",
             img: "./img/burger3.png",
             price: "19.89$"
         },
