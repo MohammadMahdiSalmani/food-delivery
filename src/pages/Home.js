@@ -4,7 +4,6 @@ import FoodDrawer from '../components/FoodDrawer'
 import { Input } from "antd"
 import { SearchOutlined } from '@ant-design/icons'
 
-
 const Home = () => {
   return (
     <section className='flex flex-col w-full'>
