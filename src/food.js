@@ -8,7 +8,7 @@ export const food = {
         {
             name: "Mixed",
             img: "./img/pizza1.png",
-            price: "23.89"
+            price: "25.89"
         },
         {
             name: "Olive",

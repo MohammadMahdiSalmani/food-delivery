@@ -20,7 +20,7 @@ const Category = ({ category }) => {
                         >
                             <div className='flex flex-col'>
                                 <label className='flex justify-center text-xl w-full'>{item.name}</label>
-                                <label className='flex justify-center text-2xl p-5 w-full text-primary'><strong className="text-dark">{item.price}</strong>$</label>
+                                <label className='flex justify-center text-2xl p-5 w-full text-primary'><strong className="text-dark">{item.price}</strong>&nbsp;$</label>
                             </div>
                         </Card>
                     </li>

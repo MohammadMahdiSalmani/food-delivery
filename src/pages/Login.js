@@ -27,7 +27,7 @@ const Login = () => {
                 message: 'Please input your Email Address!',
               },
             ]}>
-              <Input type="email" variant='borderless' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full text-2xl input-underline" />
+              <Input type="email" variant='borderless' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full text-xl input-underline" />
             </Form.Item>
 
             <Form.Item label="Password" className='w-4/6 text-center' name="password" rules={[
@@ -36,7 +36,7 @@ const Login = () => {
                 message: 'Please input your Password!',
               },
             ]}>
-              <Input.Password variant='borderless' value={password} onChange={(event) => setPassword(event.target.value)} className="w-full text-2xl input-underline" />
+              <Input.Password variant='borderless' value={password} onChange={(event) => setPassword(event.target.value)} className="w-full text-xl input-underline" />
             </Form.Item>
 
 
@@ -56,7 +56,7 @@ const Login = () => {
                 message: 'Please input your Email Address!',
               },
             ]}>
-              <Input type="email" variant='borderless' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full text-2xl input-underline" />
+              <Input type="email" variant='borderless' value={email} onChange={(event) => setEmail(event.target.value)} className="w-full text-xl input-underline" />
             </Form.Item>
 
             <Form.Item label="Password" className='w-4/6 text-center' name="password" rules={[
@@ -65,7 +65,7 @@ const Login = () => {
                 message: 'Please input your Password!',
               },
             ]}>
-              <Input.Password variant='borderless' value={password} onChange={(event) => setPassword(event.target.value)} className="w-full text-2xl input-underline" />
+              <Input.Password variant='borderless' value={password} onChange={(event) => setPassword(event.target.value)} className="w-full text-xl input-underline" />
             </Form.Item>
 
             <Form.Item label="Confirm Password" className='w-4/6 text-center' name="repassword" rules={[
@@ -74,7 +74,7 @@ const Login = () => {
                 message: 'Please confirm your Password!',
               },
             ]}>
-              <Input.Password variant='borderless' value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)} className="w-full text-2xl input-underline" />
+              <Input.Password variant='borderless' value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)} className="w-full text-xl input-underline" />
             </Form.Item>
 
             <span className="flex w-1/2 justify-center my-5 text-lg cursor-pointer text-gray hover:text-dark transition-all duration-300" onClick={() => switchFormHandler("login")}>Have an account? Login</span>
