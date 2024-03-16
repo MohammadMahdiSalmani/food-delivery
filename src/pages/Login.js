@@ -16,7 +16,7 @@ const Login = () => {
   }
 
   return (
-    <section className='flex flex-col w-full h-screen'>
+    <section className='flex flex-col w-full'>
       {form === "login" ?
         <Form layout='vertical' className="flex flex-col items-center w-full">
           <img src='./img/logo.png' alt='Logo' className='w-2/3' />
