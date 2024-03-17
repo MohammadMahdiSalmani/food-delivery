@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Badge, Button, Card, Drawer } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from '../redux/reducers/cartSlice'
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
     const cart = useSelector(state => state.cart)
@@ -41,12 +42,12 @@ const Menu = () => {
                 </Badge>
             </span>
 
-            <Drawer closeIcon={<img alt='Back' src='./img/angle-left.svg' className='w-1/12' />} open={open} placement='right' width={'100%'} className='bg-background' onClose={() => setOpen(!open)}>
+            <Drawer closeIcon={<img alt='Back' src='./img/angle-left.svg' className='w-1/12' />} open={open} placement='right' width={'100%'} className='bg-background' onClose={() => setOpen(false)}>
                 <ul className='flex flex-col w-full justify-center'>
                     {listItem}
                 </ul>
 
-                <Button type='primary' className='fixed bottom-2 left-1/2 -translate-x-1/2 w-11/12 h-auto text-xl py-2 rounded-xl bg-primary'>Checkout</Button>
+                <Link to="/checkout"><Button type='primary' onClick={() => setOpen(false)} className='fixed bottom-2 left-1/2 -translate-x-1/2 w-11/12 h-auto text-xl py-2 rounded-xl bg-primary disabled:bg-lightGray' disabled={cart.items.length > 0 ? false : true}>Checkout</Button></Link>
             </Drawer>
         </nav>
     )

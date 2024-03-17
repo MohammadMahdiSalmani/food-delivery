@@ -1,18 +1,12 @@
 import React, { useState } from 'react'
-import { Button, Card, Input, Modal, Radio, message } from 'antd'
+import { Button, Card, Divider, Input, Modal, message } from 'antd'
 
 const Profile = () => {
-    const [address, setAddress] = useState(1)
     const [newAddress, setNewAddress] = useState()
     const [modal, setModal] = useState(false)
 
-    const changeAddressHandler = e => {
-        setAddress(e.target.value)
-    }
-
     const addNewAddressHandler = () => {
-        if(newAddress) {
-            console.log("New Address Added")
+        if (newAddress) {
             setNewAddress()
             message.success("New address added!")
         }
@@ -33,13 +27,13 @@ const Profile = () => {
 
             <Card className='flex flex-col w-11/12 rounded-2xl mt-8' title="Addresses" bordered={false} extra={<Button type='primary' className='text-white bg-lightBlack rounded-lg' onClick={() => setModal(true)}>+</Button>}>
                 <Modal title="New Address" open={modal} onCancel={() => setModal(false)} footer={[<Button key="submit" type="primary" className='text-white bg-info' onClick={addNewAddressHandler}>Add</Button>]}>
-                    <Input type='text' value={newAddress} onChange={event => setNewAddress(event.target.value) } />
+                    <Input type='text' value={newAddress} onChange={event => setNewAddress(event.target.value)} />
                 </Modal>
-                <div className='flex flex-col items-start'>
-                    <Radio.Group onChange={changeAddressHandler} value={address}>
-                        <Radio className='p-2 pt-0' value={1}>7155 State Rt 12 S, Lowville NY 13367</Radio>
-                        <Radio className='p-2 pt-0' value={2}>4975 Transit Rd, Lancaster NY 14086</Radio>
-                    </Radio.Group>
+
+                <div className='flex flex-col justify-center text-lightBlack'>
+                    <span className='px-2'>• 4975 Transit Rd, Lancaster NY 14086</span>
+                    <Divider />
+                    <span className='px-2'>• 7155 State Rt 12 S, Lowville NY 13367</span>
                 </div>
             </Card>
         </section>
