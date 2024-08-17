@@ -5,6 +5,8 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Checkout from './pages/Checkout'
+import Pay from './pages/Pay'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Menu from './components/Menu'
@@ -20,6 +22,7 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<><Profile /><Navbar /></>} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/pay" element={<Pay />} />
           </Routes>
         <Footer />
       </Layout>

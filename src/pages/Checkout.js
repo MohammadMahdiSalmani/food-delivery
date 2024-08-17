@@ -45,7 +45,7 @@ const Checkout = () => {
                 <span className='flex text-2xl justify-center items-center'>{cart.totalPrice}$</span>
             </div>
 
-            <Link to="/checkout"><Button type='primary' className='fixed bottom-2 left-1/2 -translate-x-1/2 w-11/12 h-auto text-xl py-2 rounded-xl bg-primary'>pay</Button></Link>
+            <Link to="/pay"><Button type='primary' className='fixed bottom-2 left-1/2 -translate-x-1/2 w-11/12 h-auto text-xl py-2 rounded-xl bg-primary'>Proceed to Payment</Button></Link>
         </section>
     )
 }
