@@ -30,7 +30,7 @@ const Menu = () => {
                         </div>
 
                         <div className='flex flex-col items-center bg-primary rounded-full'>
-                            <Button onClick={() => dispatch(increment({ name: item.name, price: item.price, img: item.img }))} type="text" className="text-white rounded-full">+</Button>
+                            <Button onClick={() => dispatch(increment({ name: item.name, price: item.price, material: item.material, img: item.img }))} type="text" className="text-white rounded-full">+</Button>
                             <span className='flex items-center text-xl text-white pt-1'>{item.count}</span>
                             <Button onClick={() => dispatch(decrement({ name: item.name }))} type="text" className="text-white rounded-full">-</Button>
                         </div>

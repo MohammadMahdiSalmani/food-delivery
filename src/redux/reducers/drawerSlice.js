@@ -6,6 +6,7 @@ const drawerSlice = createSlice({
         status: false,
         name: "",
         price: "",
+        material: "",
         img: "",
     },
     reducers: {
@@ -13,6 +14,7 @@ const drawerSlice = createSlice({
             state.status = action.payload.status
             state.name = action.payload.name
             state.price = action.payload.price
+            state.material = action.payload.material
             state.img = action.payload.img
         }
     }
