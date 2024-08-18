@@ -12,10 +12,10 @@ const Category = ({ category }) => {
             <label className='text-5xl ml-10'>{category}</label>
             <ul className='flex overflow-x-scroll no-scrollbar'>
                 {food[category].map(item => {
-                    return <li key={item.name} className='basis-2/3 w-32 shrink-0 mx-2 overflow-hidden'>
+                    return <li key={item.name} className='basis-2/3 lg:basis-1/4 shrink-0 mx-2 overflow-hidden'>
                         <Card
                             cover={<img alt={item.name} src={item.img} className='w-full h-56 object-contain relative -top-10 px-5' />}
-                            className='flex flex-col items-center mt-14 rounded-3xl'
+                            className='flex flex-col items-center mt-14 rounded-3xl cursor-pointer'
                             onClick={() => dispatch(toggleDrawer({ status: true, name: item.name, price: item.price, img: item.img }))}
                         >
                             <div className='flex flex-col'>

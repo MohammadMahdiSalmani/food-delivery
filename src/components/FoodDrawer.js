@@ -3,18 +3,20 @@ import { Drawer, Button } from 'antd'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleDrawer} from '../redux/reducers/drawerSlice'
 import { increment, decrement } from '../redux/reducers/cartSlice'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 const FoodDrawer = () => {
   const dispatch = useDispatch()
   const food = useSelector(state => state.drawerStatus)
   const cart = useSelector(state => state.cart)
+  const { width } = useWindowDimensions()
 
   const count = cart.items.find(item => item.name === food.name)
 
   return (
-    <Drawer open={food.status} onClose={() => dispatch(toggleDrawer({ status: false, name: "", price: "", count: 0, img: "" }))} placement='bottom' closable={false} className='flex flex-col rounded-t-3xl'>
+    <Drawer open={food.status} size={width > 421 ? 'large' : 'default' } onClose={() => dispatch(toggleDrawer({ status: false, name: "", price: "", count: 0, img: "" }))} placement={width > 421 ? 'left' : 'bottom' } closable={false} className={`flex flex-col ${width > 421 ? 'rounded-r-2xl' : 'rounded-t-2xl'}`}>
       <div className="flex justify-center">
-        <div className="w-2/3">
+        <div className="w-2/3 lg:w-1/2">
           <img alt='Food' src={food.img} />
         </div>
       </div>

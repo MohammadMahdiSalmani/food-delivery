@@ -7,8 +7,8 @@ import { SearchOutlined } from '@ant-design/icons'
 const Home = () => {
   return (
     <section className='flex flex-col w-full'>
-      <div className='flex flex-col items-center w-full px-10'>
-        <Input className='flex w-full pl-5 text-2xl rounded-full bg-lightGray border-none' size='large' prefix={<SearchOutlined />} placeholder='Search' />
+      <div className='flex flex-col items-center w-full px-10 lg:mt-10'>
+        <Input className='flex w-full lg:w-1/2 pl-5 text-2xl rounded-full bg-lightGray border-none' size='large' prefix={<SearchOutlined />} placeholder='Search' />
       </div>
 
       <Category category="Pizza" />

@@ -6,9 +6,7 @@ import Home from './pages/Home'
 import Profile from './pages/Profile'
 import Checkout from './pages/Checkout'
 import Pay from './pages/Pay'
-
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import Hoc from './hoc/hoc'
 import Menu from './components/Menu'
 
 import "./styles/index.css"
@@ -18,13 +16,12 @@ const App = () => {
     <Router>
       <Layout className="flex flex-col w-full">
           <Routes>
-            <Route path="/" element={<><Home /><Menu /><Navbar /></>} />
+            <Route path="/" element={<Hoc><Home /><Menu /></Hoc>} />
             <Route path="/login" element={<Login />} />
-            <Route path="/profile" element={<><Profile /><Navbar /></>} />
+            <Route path="/profile" element={<><Profile /></>} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/pay" element={<Pay />} />
           </Routes>
-        <Footer />
       </Layout>
     </Router>
   )

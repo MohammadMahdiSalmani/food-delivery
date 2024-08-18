@@ -16,7 +16,7 @@ const Login = () => {
   }
 
   return (
-    <section className='flex flex-col w-full'>
+    <section className='flex flex-col w-full h-screen'>
       {form === "login" ?
         <Form layout='vertical' className="flex flex-col items-center w-full">
           <img src='./img/logo.png' alt='Logo' className='w-2/3' />
@@ -40,7 +40,7 @@ const Login = () => {
             </Form.Item>
 
 
-            <a href='./' className='flex w-4/6 justify-start no-underline mb-5 text-primary'>Forgot password?</a>
+            <a href='./login' className='flex w-4/6 justify-start no-underline mb-5 text-primary'>Forgot password?</a>
 
             <span className="flex w-1/2 justify-center my-5 text-lg cursor-pointer text-gray hover:text-dark transition-all duration-300" onClick={() => switchFormHandler("singup")}>Do not have an account?</span>
           </div>
